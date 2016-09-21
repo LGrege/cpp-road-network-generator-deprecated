@@ -1,0 +1,107 @@
+\hypertarget{class_i_interpretable}{}\section{I\+Interpretable Class Reference}
+\label{class_i_interpretable}\index{I\+Interpretable@{I\+Interpretable}}
+
+
+Interface declares interpretors for the gotten results.  
+
+
+
+
+{\ttfamily \#include $<$I\+Interpretable.\+h$>$}
+
+Inheritance diagram for I\+Interpretable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_i_interpretable}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_i_interpretable_a111c0b6ed22d2ab516c6ca3fbd709a63}{}\label{class_i_interpretable_a111c0b6ed22d2ab516c6ca3fbd709a63} 
+virtual void {\bfseries handle\+River} (std\+::vector$<$ Segment\+\_\+2 $>$ river)=0
+\item 
+\hypertarget{class_i_interpretable_adfa70e9492340b2095c682dca05b9227}{}\label{class_i_interpretable_adfa70e9492340b2095c682dca05b9227} 
+virtual void {\bfseries handle\+Error} (std\+::vector$<$ Segment\+\_\+2 $>$ error)=0
+\item 
+\hypertarget{class_i_interpretable_a3f7441857e03e16a2ffaaaf214249839}{}\label{class_i_interpretable_a3f7441857e03e16a2ffaaaf214249839} 
+virtual void {\bfseries handle\+Bridges} (std\+::vector$<$ Segment\+\_\+2 $>$ bridges)=0
+\item 
+\hypertarget{class_i_interpretable_aa857e725bb0d2f82a0ee47758bfb1005}{}\label{class_i_interpretable_aa857e725bb0d2f82a0ee47758bfb1005} 
+virtual void {\bfseries handle\+Street\+Segments} (std\+::vector$<$ Segment\+\_\+2 $>$ streets)=0
+\item 
+\hypertarget{class_i_interpretable_a7d266b1337d81a3faca42b987293fb9a}{}\label{class_i_interpretable_a7d266b1337d81a3faca42b987293fb9a} 
+virtual void {\bfseries handle\+Highway\+Exit} (C\+G\+A\+L\+::\+M\+P\+\_\+\+Float x, C\+G\+A\+L\+::\+M\+P\+\_\+\+Float y)=0
+\item 
+\hypertarget{class_i_interpretable_ac1a4695ce8a38f30c72444964528f66f}{}\label{class_i_interpretable_ac1a4695ce8a38f30c72444964528f66f} 
+virtual void {\bfseries handle\+Highway\+Segments} (std\+::vector$<$ Segment\+\_\+2 $>$ highways)=0
+\item 
+\hypertarget{class_i_interpretable_a2e4d9b4686ea4745b228f0455dbfb00c}{}\label{class_i_interpretable_a2e4d9b4686ea4745b228f0455dbfb00c} 
+virtual void {\bfseries handle\+New\+Highway\+Start} (C\+G\+A\+L\+::\+M\+P\+\_\+\+Float x, C\+G\+A\+L\+::\+M\+P\+\_\+\+Float y)=0
+\item 
+\hypertarget{class_i_interpretable_a3f3973a2ab6bd88fe269e9cbb96424e1}{}\label{class_i_interpretable_a3f3973a2ab6bd88fe269e9cbb96424e1} 
+virtual void {\bfseries handle\+High\+Density\+Point} (C\+G\+A\+L\+::\+M\+P\+\_\+\+Float x, C\+G\+A\+L\+::\+M\+P\+\_\+\+Float y, int max\+\_\+diameter)=0
+\item 
+\hypertarget{class_i_interpretable_a19891b709c0b9610ee7e0bc6cfacfa2e}{}\label{class_i_interpretable_a19891b709c0b9610ee7e0bc6cfacfa2e} 
+virtual void {\bfseries handle\+Highway\+Interception} (C\+G\+A\+L\+::\+M\+P\+\_\+\+Float x, C\+G\+A\+L\+::\+M\+P\+\_\+\+Float y)=0
+\item 
+\hypertarget{class_i_interpretable_aa4cdcc0ed84340a98edcdccb1b7b0832}{}\label{class_i_interpretable_aa4cdcc0ed84340a98edcdccb1b7b0832} 
+virtual void {\bfseries handle\+Interception} (C\+G\+A\+L\+::\+M\+P\+\_\+\+Float new\+\_\+x, C\+G\+A\+L\+::\+M\+P\+\_\+\+Float new\+\_\+y)=0
+\item 
+\hypertarget{class_i_interpretable_a8be21dc53a269a2f063dedbef82a5324}{}\label{class_i_interpretable_a8be21dc53a269a2f063dedbef82a5324} 
+virtual void {\bfseries handle\+Polygon} (std\+::vector$<$ Point\+\_\+2 $>$ polygon, unsigned r, unsigned g, unsigned b)=0
+\item 
+\hypertarget{class_i_interpretable_a303b1a1d5b4a8161b3ac949a242d9edd}{}\label{class_i_interpretable_a303b1a1d5b4a8161b3ac949a242d9edd} 
+virtual void {\bfseries close\+Network} ()=0
+\item 
+\hypertarget{class_i_interpretable_a43563bf724954090b618c66a865643fe}{}\label{class_i_interpretable_a43563bf724954090b618c66a865643fe} 
+virtual void {\bfseries start\+Network} ()=0
+\item 
+\hypertarget{class_i_interpretable_aa020c43e83d17a5faa60c7c4d53ebcb5}{}\label{class_i_interpretable_aa020c43e83d17a5faa60c7c4d53ebcb5} 
+virtual void {\bfseries close\+File} ()=0
+\item 
+\hypertarget{class_i_interpretable_a5b7e79c4251dcc50783e1c11b71c6b8c}{}\label{class_i_interpretable_a5b7e79c4251dcc50783e1c11b71c6b8c} 
+virtual void {\bfseries open\+File} (std\+::string file\+\_\+name)=0
+\item 
+\hypertarget{class_i_interpretable_a5a176aa42f975513e3b5bf030c7f34b4}{}\label{class_i_interpretable_a5a176aa42f975513e3b5bf030c7f34b4} 
+virtual void \hyperlink{class_i_interpretable_a5a176aa42f975513e3b5bf030c7f34b4}{set\+Background\+Color} (unsigned r, unsigned g, unsigned b)=0
+\begin{DoxyCompactList}\small\item\em Set background color of the output map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface declares interpretors for the gotten results. 
+
+\hyperlink{class_i_interpretable}{I\+Interpretable}
+
+Different interpretors could be added (Different output formats). Currently only the \hyperlink{class_post_script_int_writer}{Post\+Script\+Int\+Writer} makes use of this interface
+
+Contains different handler functions for the different data collected throughout the generation, as well as helper functions for creating the network.
+
+\begin{DoxyAuthor}{Author}
+Lukas Gregori 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1.\+0 
+\end{DoxyParagraph}
+
+
+Contact\+: \href{mailto:lukas.gregori@student.tugraz.at}{\tt lukas.\+gregori@student.\+tugraz.\+at}
+
+
+
+ Copyright (C) Lukas Gregori, \href{mailto:contact@lukasgregori.com}{\tt contact@lukasgregori.\+com}
+
+This file is part of the road network generator Road\+Gen.
+
+Road\+Gen is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+Road\+Gen is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+
+You should have received a copy of the G\+NU General Public License \subsubsection*{along with Foobar. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}. }
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/lukas/\+Desktop/\+Road\+Gen\+L\+Systems/I\+Interpretable.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,123 @@
+\hypertarget{class_j_s_o_n_generator}{}\section{J\+S\+O\+N\+Generator Class Reference}
+\label{class_j_s_o_n_generator}\index{J\+S\+O\+N\+Generator@{J\+S\+O\+N\+Generator}}
+
+
+Static class used to generate Polygons from the line-\/segments gotten by the L-\/\+System and write them to a J\+S\+ON / .txt -\/\+Files.  
+
+
+
+
+{\ttfamily \#include $<$J\+S\+O\+N\+Generator.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_j_s_o_n_generator_a74a484947b0a0fd18b5d89b09709850e}{write\+J\+S\+O\+N\+Out} (string file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Generate Polygons from segments and export them. \end{DoxyCompactList}\item 
+static void \hyperlink{class_j_s_o_n_generator_a25781459ecbc43c1fd555e46a8b87298}{write\+Poly\+To\+J\+S\+ON} (string dir\+\_\+name, string file\+\_\+name, std\+::vector$<$ std\+::vector$<$ Point\+\_\+2 $>$$>$ vec\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Writes the vector specified in the parameters to the out files specified by the name (with additional counter). \end{DoxyCompactList}\item 
+static void \hyperlink{class_j_s_o_n_generator_adfb22e7e06494e5222752ac53a7d96a5}{write\+Poly\+To\+Txt} (string dir\+\_\+name, string file\+\_\+name, std\+::vector$<$ std\+::vector$<$ Point\+\_\+2 $>$$>$ vec\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Writes all rivers stored in the entity-\/container to .txt files. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Static class used to generate Polygons from the line-\/segments gotten by the L-\/\+System and write them to a J\+S\+ON / .txt -\/\+Files. 
+
+\begin{DoxyNote}{Note}
+J\+S\+ON as well as .txt Output can be generated
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Lukas Gregori 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1.\+0 
+\end{DoxyParagraph}
+
+
+Contact\+: \href{mailto:lukas.gregori@student.tugraz.at}{\tt lukas.\+gregori@student.\+tugraz.\+at}
+
+
+
+ Copyright (C) Lukas Gregori, \href{mailto:contact@lukasgregori.com}{\tt contact@lukasgregori.\+com}
+
+This file is part of the road network generator Road\+Gen.
+
+Road\+Gen is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+Road\+Gen is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+
+You should have received a copy of the G\+NU General Public License \subsubsection*{along with Foobar. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}. }
+
+\subsection{Member Function Documentation}
+\hypertarget{class_j_s_o_n_generator_a74a484947b0a0fd18b5d89b09709850e}{}\label{class_j_s_o_n_generator_a74a484947b0a0fd18b5d89b09709850e} 
+\index{J\+S\+O\+N\+Generator@{J\+S\+O\+N\+Generator}!write\+J\+S\+O\+N\+Out@{write\+J\+S\+O\+N\+Out}}
+\index{write\+J\+S\+O\+N\+Out@{write\+J\+S\+O\+N\+Out}!J\+S\+O\+N\+Generator@{J\+S\+O\+N\+Generator}}
+\subsubsection{\texorpdfstring{write\+J\+S\+O\+N\+Out()}{writeJSONOut()}}
+{\footnotesize\ttfamily void J\+S\+O\+N\+Generator\+::write\+J\+S\+O\+N\+Out (\begin{DoxyParamCaption}\item[{string}]{file\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Generate Polygons from segments and export them. 
+
+First generates polygons from the line segments gotten by the L-\/\+System, by using the \char`\"{}generate\+Polygons()\char`\"{}-\/\+Method.
+
+After doing so the polygons are written to a json-\/file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & file\+\_\+name Name of the output file \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_j_s_o_n_generator_a25781459ecbc43c1fd555e46a8b87298}{}\label{class_j_s_o_n_generator_a25781459ecbc43c1fd555e46a8b87298} 
+\index{J\+S\+O\+N\+Generator@{J\+S\+O\+N\+Generator}!write\+Poly\+To\+J\+S\+ON@{write\+Poly\+To\+J\+S\+ON}}
+\index{write\+Poly\+To\+J\+S\+ON@{write\+Poly\+To\+J\+S\+ON}!J\+S\+O\+N\+Generator@{J\+S\+O\+N\+Generator}}
+\subsubsection{\texorpdfstring{write\+Poly\+To\+J\+S\+O\+N()}{writePolyToJSON()}}
+{\footnotesize\ttfamily void J\+S\+O\+N\+Generator\+::write\+Poly\+To\+J\+S\+ON (\begin{DoxyParamCaption}\item[{string}]{dir\+\_\+name,  }\item[{string}]{file\+\_\+name,  }\item[{std\+::vector$<$ std\+::vector$<$ Point\+\_\+2 $>$$>$}]{vec\+\_\+out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Writes the vector specified in the parameters to the out files specified by the name (with additional counter). 
+
+\begin{DoxyNote}{Note}
+J\+S\+ON Format
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em string} & dir\+\_\+name Name of output directory \\
+\hline
+{\em string} & file\+\_\+name Name of the output file \\
+\hline
+{\em std\+::vector$<$std\+::vector$<$\+Point\+\_\+2$>$$>$} & vec\+\_\+out data that shall be written \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_j_s_o_n_generator_adfb22e7e06494e5222752ac53a7d96a5}{}\label{class_j_s_o_n_generator_adfb22e7e06494e5222752ac53a7d96a5} 
+\index{J\+S\+O\+N\+Generator@{J\+S\+O\+N\+Generator}!write\+Poly\+To\+Txt@{write\+Poly\+To\+Txt}}
+\index{write\+Poly\+To\+Txt@{write\+Poly\+To\+Txt}!J\+S\+O\+N\+Generator@{J\+S\+O\+N\+Generator}}
+\subsubsection{\texorpdfstring{write\+Poly\+To\+Txt()}{writePolyToTxt()}}
+{\footnotesize\ttfamily void J\+S\+O\+N\+Generator\+::write\+Poly\+To\+Txt (\begin{DoxyParamCaption}\item[{string}]{dir\+\_\+name,  }\item[{string}]{file\+\_\+name,  }\item[{std\+::vector$<$ std\+::vector$<$ Point\+\_\+2 $>$$>$}]{vec\+\_\+out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Writes all rivers stored in the entity-\/container to .txt files. 
+
+\begin{DoxyNote}{Note}
+.txt Format
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em string} & dir\+\_\+name Name of output directory \\
+\hline
+{\em string} & file\+\_\+name Name of the output file \\
+\hline
+{\em std\+::vector$<$std\+::vector$<$\+Point\+\_\+2$>$$>$} & vec\+\_\+out data that shall be written $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/lukas/\+Desktop/\+Road\+Gen\+L\+Systems/J\+S\+O\+N\+Generator.\+h\item 
+C\+:/\+Users/lukas/\+Desktop/\+Road\+Gen\+L\+Systems/J\+S\+O\+N\+Generator.\+cpp\end{DoxyCompactItemize}

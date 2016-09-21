@@ -1,0 +1,116 @@
+\hypertarget{class_non_terminal_symbol}{}\section{Non\+Terminal\+Symbol Class Reference}
+\label{class_non_terminal_symbol}\index{Non\+Terminal\+Symbol@{Non\+Terminal\+Symbol}}
+
+
+Parent class for all non-\/terminal members.  
+
+
+
+
+{\ttfamily \#include $<$Non\+Terminal\+Symbol.\+h$>$}
+
+Inheritance diagram for Non\+Terminal\+Symbol\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_non_terminal_symbol}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_non_terminal_symbol}{Non\+Terminal\+Symbol} $\ast$ \hyperlink{class_non_terminal_symbol_ade38f1475002e4f8b41e23d9c787e5e0}{replace} ()=0
+\begin{DoxyCompactList}\small\item\em Creates new sub-\/generation of the L-\/\+System. \end{DoxyCompactList}\item 
+void \hyperlink{class_non_terminal_symbol_a5836ba5450850843721742e40064c5dc}{insert\+Sublist} (\hyperlink{class_non_terminal_symbol}{Non\+Terminal\+Symbol} $\ast$sublist, \hyperlink{class_non_terminal_symbol}{Non\+Terminal\+Symbol} $\ast$after)
+\begin{DoxyCompactList}\small\item\em Inserts a sublist of N\+T-\/\+Elements. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_non_terminal_symbol_afd45d7cf8c469a93dee6d1683162a78a}{}\label{class_non_terminal_symbol_afd45d7cf8c469a93dee6d1683162a78a} 
+bool \hyperlink{class_non_terminal_symbol_afd45d7cf8c469a93dee6d1683162a78a}{terminated\+\_\+}
+\begin{DoxyCompactList}\small\item\em True until symbol can no longer be replaced (Termintates) \end{DoxyCompactList}\item 
+\hypertarget{class_non_terminal_symbol_a378de10e3a1b73efc005d1f86dc8dd3e}{}\label{class_non_terminal_symbol_a378de10e3a1b73efc005d1f86dc8dd3e} 
+\hyperlink{class_non_terminal_symbol}{Non\+Terminal\+Symbol} $\ast$ {\bfseries next\+\_\+}
+\item 
+\hypertarget{class_non_terminal_symbol_a1365061b52c674fbbcfe7178584ce65e}{}\label{class_non_terminal_symbol_a1365061b52c674fbbcfe7178584ce65e} 
+\hyperlink{class_non_terminal_symbol}{Non\+Terminal\+Symbol} $\ast$ {\bfseries pre\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Parent class for all non-\/terminal members. 
+
+Parent class of all the {\bfseries non-\/terminal} symbols that will be used by the grammar of our L-\/\+System. Every Non-\/\+Terminal symbol has a replace method that replaces it in the linked list (represented by the next\+\_\+ pointers) with its child elements -\/$>$ what the nonterminal turns into.
+
+\begin{DoxyNote}{Note}
+No Terminal class exists as N\+T-\/\+Members terminate based on a flag inside
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Lukas Gregori 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1.\+0 
+\end{DoxyParagraph}
+
+
+Contact\+: \href{mailto:lukas.gregori@student.tugraz.at}{\tt lukas.\+gregori@student.\+tugraz.\+at}
+
+
+
+ Copyright (C) Lukas Gregori, \href{mailto:contact@lukasgregori.com}{\tt contact@lukasgregori.\+com}
+
+This file is part of the road network generator Road\+Gen.
+
+Road\+Gen is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+Road\+Gen is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+
+You should have received a copy of the G\+NU General Public License \subsubsection*{along with Foobar. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}. }
+
+\subsection{Member Function Documentation}
+\hypertarget{class_non_terminal_symbol_a5836ba5450850843721742e40064c5dc}{}\label{class_non_terminal_symbol_a5836ba5450850843721742e40064c5dc} 
+\index{Non\+Terminal\+Symbol@{Non\+Terminal\+Symbol}!insert\+Sublist@{insert\+Sublist}}
+\index{insert\+Sublist@{insert\+Sublist}!Non\+Terminal\+Symbol@{Non\+Terminal\+Symbol}}
+\subsubsection{\texorpdfstring{insert\+Sublist()}{insertSublist()}}
+{\footnotesize\ttfamily void Non\+Terminal\+Symbol\+::insert\+Sublist (\begin{DoxyParamCaption}\item[{\hyperlink{class_non_terminal_symbol}{Non\+Terminal\+Symbol} $\ast$}]{sublist,  }\item[{\hyperlink{class_non_terminal_symbol}{Non\+Terminal\+Symbol} $\ast$}]{after }\end{DoxyParamCaption})}
+
+
+
+Inserts a sublist of N\+T-\/\+Elements. 
+
+Inserts a sublist of elements handed as parameter into a second list specified by the after parameter. Used as each segment replaces itself in the list
+
+
+\begin{DoxyParams}{Parameters}
+{\em Non\+Terminal\+Symbol$\ast$} & sublist Sublist to insert \\
+\hline
+{\em Non\+Terminal\+Symbol$\ast$} & after Insert after this element \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_non_terminal_symbol_ade38f1475002e4f8b41e23d9c787e5e0}{}\label{class_non_terminal_symbol_ade38f1475002e4f8b41e23d9c787e5e0} 
+\index{Non\+Terminal\+Symbol@{Non\+Terminal\+Symbol}!replace@{replace}}
+\index{replace@{replace}!Non\+Terminal\+Symbol@{Non\+Terminal\+Symbol}}
+\subsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_non_terminal_symbol}{Non\+Terminal\+Symbol}$\ast$ Non\+Terminal\+Symbol\+::replace (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Creates new sub-\/generation of the L-\/\+System. 
+
+Replaces the non-\/terminal symbol by its successors. Returns the object itself so that it can be freed afterwards.
+
+\begin{DoxyReturn}{Returns}
+Non\+Terminal\+Symbol$\ast$ self 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_n_t_street_ac3aa05ca530c99b178a855fc736b1a76}{N\+T\+Street}, \hyperlink{class_n_t_highway_segment_a22518e50d87a70aeb1ead58b26dfa483}{N\+T\+Highway\+Segment}, \hyperlink{class_n_t_start_a3f9897b293a26b301415a9089b90697b}{N\+T\+Start}, and \hyperlink{class_n_t_highway_a5a33cf5f76b36a1d62685408306a54c9}{N\+T\+Highway}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/lukas/\+Desktop/\+Road\+Gen\+L\+Systems/Non\+Terminal\+Symbol.\+h\item 
+C\+:/\+Users/lukas/\+Desktop/\+Road\+Gen\+L\+Systems/Non\+Terminal\+Symbol.\+cpp\end{DoxyCompactItemize}

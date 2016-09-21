@@ -1,0 +1,132 @@
+\hypertarget{class_n_t_highway_segment}{}\section{N\+T\+Highway\+Segment Class Reference}
+\label{class_n_t_highway_segment}\index{N\+T\+Highway\+Segment@{N\+T\+Highway\+Segment}}
+
+
+Smallest unit of highway.  
+
+
+
+
+{\ttfamily \#include $<$N\+T\+Highway\+Segment.\+h$>$}
+
+Inheritance diagram for N\+T\+Highway\+Segment\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_n_t_highway_segment}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_n_t_highway_segment_adca391b80753f8fe54ab86657b9a49b6}{}\label{class_n_t_highway_segment_adca391b80753f8fe54ab86657b9a49b6} 
+{\bfseries N\+T\+Highway\+Segment} (C\+G\+A\+L\+::\+M\+P\+\_\+\+Float x, C\+G\+A\+L\+::\+M\+P\+\_\+\+Float y, C\+G\+A\+L\+::\+M\+P\+\_\+\+Float x\+\_\+old, C\+G\+A\+L\+::\+M\+P\+\_\+\+Float y\+\_\+old, unsigned total\+\_\+distance, Point\+\_\+2 goal, bool create\+\_\+street)
+\item 
+\hyperlink{class_non_terminal_symbol}{Non\+Terminal\+Symbol} $\ast$ \hyperlink{class_n_t_highway_segment_a22518e50d87a70aeb1ead58b26dfa483}{replace} ()
+\begin{DoxyCompactList}\small\item\em Creates new sub-\/generation of the L-\/\+System. \end{DoxyCompactList}\item 
+void \hyperlink{class_n_t_highway_segment_a0008e99793162c8d78903aa9d35518df}{handle\+River\+Intersection} (Point\+\_\+2 closest\+\_\+intersection, Point\+\_\+2 farther\+\_\+intersection, Point\+\_\+2 old\+\_\+position)
+\begin{DoxyCompactList}\small\item\em Handles intersections of highway segments with rivers. \end{DoxyCompactList}\item 
+bool \hyperlink{class_n_t_highway_segment_adad0b1eecee26cfb43a6f53bbf560a1c}{check\+For\+River\+Intersection} (vector$<$ Point\+\_\+2 $>$ river\+\_\+intersections, Point\+\_\+2 new\+\_\+position, Point\+\_\+2 old\+\_\+position)
+\begin{DoxyCompactList}\small\item\em Checks if there are intersections with a river and if so handles them accordingly. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Smallest unit of highway. 
+
+The segments that make up the actual highway. Highways always grow towards a certain goal point (high density point in this case).
+
+\begin{DoxyAuthor}{Author}
+Lukas Gregori 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1.\+0 
+\end{DoxyParagraph}
+
+
+Contact\+: \href{mailto:lukas.gregori@student.tugraz.at}{\tt lukas.\+gregori@student.\+tugraz.\+at}
+
+
+
+ Copyright (C) Lukas Gregori, \href{mailto:contact@lukasgregori.com}{\tt contact@lukasgregori.\+com}
+
+This file is part of the road network generator Road\+Gen.
+
+Road\+Gen is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+Road\+Gen is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+
+You should have received a copy of the G\+NU General Public License \subsubsection*{along with Foobar. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}. }
+
+\subsection{Member Function Documentation}
+\hypertarget{class_n_t_highway_segment_adad0b1eecee26cfb43a6f53bbf560a1c}{}\label{class_n_t_highway_segment_adad0b1eecee26cfb43a6f53bbf560a1c} 
+\index{N\+T\+Highway\+Segment@{N\+T\+Highway\+Segment}!check\+For\+River\+Intersection@{check\+For\+River\+Intersection}}
+\index{check\+For\+River\+Intersection@{check\+For\+River\+Intersection}!N\+T\+Highway\+Segment@{N\+T\+Highway\+Segment}}
+\subsubsection{\texorpdfstring{check\+For\+River\+Intersection()}{checkForRiverIntersection()}}
+{\footnotesize\ttfamily bool N\+T\+Highway\+Segment\+::check\+For\+River\+Intersection (\begin{DoxyParamCaption}\item[{vector$<$ Point\+\_\+2 $>$}]{river\+\_\+intersections,  }\item[{Point\+\_\+2}]{new\+\_\+position,  }\item[{Point\+\_\+2}]{old\+\_\+position }\end{DoxyParamCaption})}
+
+
+
+Checks if there are intersections with a river and if so handles them accordingly. 
+
+Checks if there are intersections of a highway segment with a river. If this is the case, the segment has to be handled accordingly (Call handle\+Rier\+Intersection method).
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector$<$\+Point\+\_\+2$>$} & river\+\_\+intersections Contains possible intersections \\
+\hline
+{\em Point\+\_\+2} & new\+\_\+position Old end position before conlission \\
+\hline
+{\em Point\+\_\+2} & old\+\_\+position Old start position before conlission \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_n_t_highway_segment_a0008e99793162c8d78903aa9d35518df}{}\label{class_n_t_highway_segment_a0008e99793162c8d78903aa9d35518df} 
+\index{N\+T\+Highway\+Segment@{N\+T\+Highway\+Segment}!handle\+River\+Intersection@{handle\+River\+Intersection}}
+\index{handle\+River\+Intersection@{handle\+River\+Intersection}!N\+T\+Highway\+Segment@{N\+T\+Highway\+Segment}}
+\subsubsection{\texorpdfstring{handle\+River\+Intersection()}{handleRiverIntersection()}}
+{\footnotesize\ttfamily void N\+T\+Highway\+Segment\+::handle\+River\+Intersection (\begin{DoxyParamCaption}\item[{Point\+\_\+2}]{closest\+\_\+intersection,  }\item[{Point\+\_\+2}]{farther\+\_\+intersection,  }\item[{Point\+\_\+2}]{old\+\_\+position }\end{DoxyParamCaption})}
+
+
+
+Handles intersections of highway segments with rivers. 
+
+If a highway intersects with a river, the segment is extended further to reach the other side of the river. The two opposite points can now be connected with a bridge
+
+At the other side of the river a new segment is created that can grow further (thus rivers do not automatically terminate highways).
+
+
+\begin{DoxyParams}{Parameters}
+{\em Point\+\_\+2} & closest\+\_\+intersection First conflict point \\
+\hline
+{\em Point\+\_\+2} & farther\+\_\+intersection Second conflict point got by extension \\
+\hline
+{\em Point\+\_\+2} & old\+\_\+position Old start position before conlission \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_n_t_highway_segment_a22518e50d87a70aeb1ead58b26dfa483}{}\label{class_n_t_highway_segment_a22518e50d87a70aeb1ead58b26dfa483} 
+\index{N\+T\+Highway\+Segment@{N\+T\+Highway\+Segment}!replace@{replace}}
+\index{replace@{replace}!N\+T\+Highway\+Segment@{N\+T\+Highway\+Segment}}
+\subsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily \hyperlink{class_non_terminal_symbol}{Non\+Terminal\+Symbol} $\ast$ N\+T\+Highway\+Segment\+::replace (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates new sub-\/generation of the L-\/\+System. 
+
+Replaces the non-\/terminal symbol by its successors. Returns the object itself so that it can be freed afterwards.
+
+\begin{DoxyReturn}{Returns}
+Non\+Terminal\+Symbol$\ast$ self 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_non_terminal_symbol_ade38f1475002e4f8b41e23d9c787e5e0}{Non\+Terminal\+Symbol}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/lukas/\+Desktop/\+Road\+Gen\+L\+Systems/N\+T\+Highway\+Segment.\+h\item 
+C\+:/\+Users/lukas/\+Desktop/\+Road\+Gen\+L\+Systems/N\+T\+Highway\+Segment.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,323 @@
+\hypertarget{class_entity_container}{}\section{Entity\+Container Class Reference}
+\label{class_entity_container}\index{Entity\+Container@{Entity\+Container}}
+
+
+Singleton Container class used by all \hyperlink{class_non_terminal_symbol}{Non\+Terminal\+Symbol} classes.  
+
+
+
+
+{\ttfamily \#include $<$Entity\+Container.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Point\+\_\+2 \hyperlink{class_entity_container_a9a7c554edd1f83a1be2616c0136e42c5}{get\+Grid\+Cell} (C\+G\+A\+L\+::\+M\+P\+\_\+\+Float x, C\+G\+A\+L\+::\+M\+P\+\_\+\+Float y)
+\begin{DoxyCompactList}\small\item\em Gets grid cell depending on x and y coordinate. \end{DoxyCompactList}\item 
+\hypertarget{class_entity_container_aef2b963be52ce8e8dde81cba5e794834}{}\label{class_entity_container_aef2b963be52ce8e8dde81cba5e794834} 
+void \hyperlink{class_entity_container_aef2b963be52ce8e8dde81cba5e794834}{insert\+Street\+Segment} (Segment\+\_\+2 new\+\_\+segment)
+\begin{DoxyCompactList}\small\item\em Insert new street segment into grid-\/system. \end{DoxyCompactList}\item 
+\hypertarget{class_entity_container_a06738ee0c18eca47bf79a90ee56b8be6}{}\label{class_entity_container_a06738ee0c18eca47bf79a90ee56b8be6} 
+void \hyperlink{class_entity_container_a06738ee0c18eca47bf79a90ee56b8be6}{insert\+Intersection} (Point\+\_\+2 intersection)
+\begin{DoxyCompactList}\small\item\em Insert new intersection into grid-\/system. \end{DoxyCompactList}\item 
+\hypertarget{class_entity_container_a34870620ebef8b20c7685e03e5fde022}{}\label{class_entity_container_a34870620ebef8b20c7685e03e5fde022} 
+void \hyperlink{class_entity_container_a34870620ebef8b20c7685e03e5fde022}{insert\+River\+Segment} (Segment\+\_\+2 new\+\_\+segment)
+\begin{DoxyCompactList}\small\item\em Insert new river segment into grid-\/system. \end{DoxyCompactList}\item 
+Point\+\_\+2 \hyperlink{class_entity_container_a1e1faca63c2c26689c6d49b42edb1792}{segment\+Intersected} (C\+G\+A\+L\+::\+M\+P\+\_\+\+Float x, C\+G\+A\+L\+::\+M\+P\+\_\+\+Float y, C\+G\+A\+L\+::\+M\+P\+\_\+\+Float x\+\_\+new, C\+G\+A\+L\+::\+M\+P\+\_\+\+Float y\+\_\+new, unsigned old\+\_\+angle, int x\+\_\+off, int y\+\_\+off)
+\begin{DoxyCompactList}\small\item\em Checks if segment intersects with another one. \end{DoxyCompactList}\item 
+Point\+\_\+2 \hyperlink{class_entity_container_a784de18b1f33fa8badc79fc369d29935}{get\+Nearest\+Intersection} (C\+G\+A\+L\+::\+M\+P\+\_\+\+Float x, C\+G\+A\+L\+::\+M\+P\+\_\+\+Float y)
+\begin{DoxyCompactList}\small\item\em Gets the nearest intersection. \end{DoxyCompactList}\item 
+std\+::vector$<$ Point\+\_\+2 $>$ \hyperlink{class_entity_container_a652c1d48db6052d1d8dd5e1aa5c5eb5f}{river\+Intersected} (C\+G\+A\+L\+::\+M\+P\+\_\+\+Float x, C\+G\+A\+L\+::\+M\+P\+\_\+\+Float y, C\+G\+A\+L\+::\+M\+P\+\_\+\+Float x\+\_\+new, C\+G\+A\+L\+::\+M\+P\+\_\+\+Float y\+\_\+new, int x\+\_\+off, int y\+\_\+off)
+\begin{DoxyCompactList}\small\item\em Checks if an existin river would be intersected by inserting the point specified by the paramters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_entity_container_a5b91deaecedcddb382a133904cd1629b}{}\label{class_entity_container_a5b91deaecedcddb382a133904cd1629b} 
+static \hyperlink{class_entity_container}{Entity\+Container} $\ast$ {\bfseries get\+Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_entity_container_ad5ebeef93ac2c3df991383039e73d5e5}{}\label{class_entity_container_ad5ebeef93ac2c3df991383039e73d5e5} 
+unsigned \hyperlink{class_entity_container_ad5ebeef93ac2c3df991383039e73d5e5}{B\+R\+A\+N\+C\+H\+\_\+\+P\+R\+OB} = 88
+\begin{DoxyCompactList}\small\item\em Pobability that subsegment branches. \end{DoxyCompactList}\item 
+\hypertarget{class_entity_container_ab201ce470dae448f360531fb0e365ce9}{}\label{class_entity_container_ab201ce470dae448f360531fb0e365ce9} 
+unsigned \hyperlink{class_entity_container_ab201ce470dae448f360531fb0e365ce9}{L\+I\+G\+H\+T\+\_\+\+P\+R\+OB} = 33
+\begin{DoxyCompactList}\small\item\em Probability that lights will be created. \end{DoxyCompactList}\item 
+\hypertarget{class_entity_container_af000c1305f9b529e4602022283c4d9f4}{}\label{class_entity_container_af000c1305f9b529e4602022283c4d9f4} 
+unsigned \hyperlink{class_entity_container_af000c1305f9b529e4602022283c4d9f4}{N\+U\+M\+B\+\_\+\+R\+I\+V\+E\+RS} = 0
+\begin{DoxyCompactList}\small\item\em Number of rivers. \end{DoxyCompactList}\item 
+\hypertarget{class_entity_container_a7e9db16fece8ec49c6ec9b8eecb50c12}{}\label{class_entity_container_a7e9db16fece8ec49c6ec9b8eecb50c12} 
+unsigned \hyperlink{class_entity_container_a7e9db16fece8ec49c6ec9b8eecb50c12}{M\+A\+X\+\_\+X} = 600
+\begin{DoxyCompactList}\small\item\em X-\/\+Dimension of output grid. \end{DoxyCompactList}\item 
+\hypertarget{class_entity_container_a78898c6f284910209e9f7a869262fb98}{}\label{class_entity_container_a78898c6f284910209e9f7a869262fb98} 
+unsigned \hyperlink{class_entity_container_a78898c6f284910209e9f7a869262fb98}{M\+A\+X\+\_\+Y} = 800
+\begin{DoxyCompactList}\small\item\em Y-\/\+Dimension of output grid. \end{DoxyCompactList}\item 
+\hypertarget{class_entity_container_aa30630d7b19fdf3eca17f07ef0d8ee28}{}\label{class_entity_container_aa30630d7b19fdf3eca17f07ef0d8ee28} 
+int \hyperlink{class_entity_container_aa30630d7b19fdf3eca17f07ef0d8ee28}{M\+A\+X\+\_\+\+S\+E\+G\+\_\+\+C\+O\+U\+NT} = 8000
+\begin{DoxyCompactList}\small\item\em Creation threshold. \end{DoxyCompactList}\item 
+\hypertarget{class_entity_container_ac3fadec692c82ab047c12137e5c3938d}{}\label{class_entity_container_ac3fadec692c82ab047c12137e5c3938d} 
+int {\bfseries M\+A\+X\+\_\+\+S\+E\+G\+\_\+\+C\+O\+U\+N\+T\+\_\+\+I\+N\+IT} = 8000
+\item 
+int \hyperlink{class_entity_container_a903b71e2c4be9c3e1d09f15e43535117}{D\+A\+Y\+\_\+\+M\+O\+DE} = true
+\item 
+int \hyperlink{class_entity_container_a9e2ee21384cc1ed4a2a74a2dbb57afa2}{H\+I\+G\+H\+W\+A\+Y\+\_\+\+C\+O\+U\+NT}
+\item 
+\hypertarget{class_entity_container_aef7e8c301071323d9931070e51404705}{}\label{class_entity_container_aef7e8c301071323d9931070e51404705} 
+std\+::vector$<$ Point\+\_\+2 $>$ \hyperlink{class_entity_container_aef7e8c301071323d9931070e51404705}{high\+\_\+dens\+\_\+points\+\_\+}
+\begin{DoxyCompactList}\small\item\em Highway goal points. \end{DoxyCompactList}\item 
+\hypertarget{class_entity_container_a40984f7d116b526a0bb6eeb987df4014}{}\label{class_entity_container_a40984f7d116b526a0bb6eeb987df4014} 
+std\+::vector$<$ Point\+\_\+2 $>$ \hyperlink{class_entity_container_a40984f7d116b526a0bb6eeb987df4014}{start\+\_\+points\+\_\+}
+\begin{DoxyCompactList}\small\item\em Highway start points. \end{DoxyCompactList}\item 
+\hypertarget{class_entity_container_afdce0409c51b6e1886bb96617ce8d004}{}\label{class_entity_container_afdce0409c51b6e1886bb96617ce8d004} 
+std\+::vector$<$ Point\+\_\+2 $>$ \hyperlink{class_entity_container_afdce0409c51b6e1886bb96617ce8d004}{all\+\_\+intersection\+\_\+}
+\begin{DoxyCompactList}\small\item\em Container for all intersections (Street and Highway) \end{DoxyCompactList}\item 
+\hypertarget{class_entity_container_af4e20ae8193a2b910f8a928dc72cbd75}{}\label{class_entity_container_af4e20ae8193a2b910f8a928dc72cbd75} 
+std\+::vector$<$ Segment\+\_\+2 $>$ \hyperlink{class_entity_container_af4e20ae8193a2b910f8a928dc72cbd75}{all\+\_\+street\+\_\+segments\+\_\+}
+\begin{DoxyCompactList}\small\item\em Container for all street segments. \end{DoxyCompactList}\item 
+\hypertarget{class_entity_container_ae2d78a8360b2ebf66c537f4659fc4d75}{}\label{class_entity_container_ae2d78a8360b2ebf66c537f4659fc4d75} 
+std\+::vector$<$ Point\+\_\+2 $>$ \hyperlink{class_entity_container_ae2d78a8360b2ebf66c537f4659fc4d75}{all\+\_\+highway\+\_\+intersections\+\_\+}
+\begin{DoxyCompactList}\small\item\em Container for all highway intersections. \end{DoxyCompactList}\item 
+\hypertarget{class_entity_container_a674902cc4f07335f3a241e10aa3d6456}{}\label{class_entity_container_a674902cc4f07335f3a241e10aa3d6456} 
+std\+::vector$<$ Point\+\_\+2 $>$ \hyperlink{class_entity_container_a674902cc4f07335f3a241e10aa3d6456}{all\+\_\+highway\+\_\+exits\+\_\+}
+\begin{DoxyCompactList}\small\item\em Container for all highway exits (branch points) \end{DoxyCompactList}\item 
+\hypertarget{class_entity_container_ac63e745f9bff741c72f413141a8f9b94}{}\label{class_entity_container_ac63e745f9bff741c72f413141a8f9b94} 
+std\+::vector$<$ Segment\+\_\+2 $>$ \hyperlink{class_entity_container_ac63e745f9bff741c72f413141a8f9b94}{all\+\_\+highway\+\_\+segments\+\_\+}
+\begin{DoxyCompactList}\small\item\em Container for all highway segments. \end{DoxyCompactList}\item 
+\hypertarget{class_entity_container_a73a5483cb36051add961774e28fb086c}{}\label{class_entity_container_a73a5483cb36051add961774e28fb086c} 
+std\+::vector$<$ Segment\+\_\+2 $>$ \hyperlink{class_entity_container_a73a5483cb36051add961774e28fb086c}{river\+\_\+segments\+\_\+}
+\begin{DoxyCompactList}\small\item\em Container for all river segments. \end{DoxyCompactList}\item 
+\hypertarget{class_entity_container_aea99d9281974632801f8e8274d5e35ac}{}\label{class_entity_container_aea99d9281974632801f8e8274d5e35ac} 
+std\+::vector$<$ Segment\+\_\+2 $>$ \hyperlink{class_entity_container_aea99d9281974632801f8e8274d5e35ac}{bridges\+\_\+}
+\begin{DoxyCompactList}\small\item\em Container for all bridges. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ Point\+\_\+2 $>$ $>$ \hyperlink{class_entity_container_a5f33573ae189549588fe11c9207374f7}{all\+\_\+polygons\+\_\+}
+\item 
+\hypertarget{class_entity_container_a6817baf3af18e5fcb1ed10524c5f4998}{}\label{class_entity_container_a6817baf3af18e5fcb1ed10524c5f4998} 
+std\+::vector$<$ std\+::vector$<$ Point\+\_\+2 $>$ $>$ {\bfseries all\+\_\+green\+\_\+spaces\+\_\+}
+\item 
+\hypertarget{class_entity_container_a38ac59ad4909159a66142c86fcb47f23}{}\label{class_entity_container_a38ac59ad4909159a66142c86fcb47f23} 
+std\+::vector$<$ std\+::vector$<$ Point\+\_\+2 $>$ $>$ {\bfseries all\+\_\+lots\+\_\+}
+\item 
+\hypertarget{class_entity_container_abb6d78fdd55d0b20136281831bc27d47}{}\label{class_entity_container_abb6d78fdd55d0b20136281831bc27d47} 
+std\+::vector$<$ std\+::vector$<$ Point\+\_\+2 $>$ $>$ {\bfseries all\+\_\+parking\+\_\+lots\+\_\+}
+\item 
+\hypertarget{class_entity_container_a995fab173a1188bf9798c762e265a94b}{}\label{class_entity_container_a995fab173a1188bf9798c762e265a94b} 
+std\+::vector$<$ std\+::vector$<$ Point\+\_\+2 $>$ $>$ {\bfseries all\+\_\+rivers\+\_\+}
+\item 
+\hypertarget{class_entity_container_a17f869e37db8fe181f2634829c4542b1}{}\label{class_entity_container_a17f869e37db8fe181f2634829c4542b1} 
+std\+::vector$<$ std\+::vector$<$ Point\+\_\+2 $>$ $>$ {\bfseries all\+\_\+trees\+\_\+}
+\item 
+\hypertarget{class_entity_container_ae5c82ecd330a6dfac1cc2b472fa25723}{}\label{class_entity_container_ae5c82ecd330a6dfac1cc2b472fa25723} 
+std\+::vector$<$ std\+::vector$<$ Point\+\_\+2 $>$ $>$ {\bfseries all\+\_\+lights\+\_\+}
+\item 
+\hypertarget{class_entity_container_abd407f32b3116ef9e295a30eaf3b1fb4}{}\label{class_entity_container_abd407f32b3116ef9e295a30eaf3b1fb4} 
+std\+::map$<$ Point\+\_\+2, std\+::vector$<$ Point\+\_\+2 $>$ $>$ {\bfseries all\+\_\+parks\+\_\+}
+\item 
+\hypertarget{class_entity_container_af5838a14b7b62083462aa908d6051f68}{}\label{class_entity_container_af5838a14b7b62083462aa908d6051f68} 
+std\+::map$<$ double, std\+::vector$<$ Point\+\_\+2 $>$ $>$ {\bfseries possible\+\_\+parks\+\_\+}
+\item 
+std\+::vector$<$ Segment\+\_\+2 $>$ \hyperlink{class_entity_container_ada172611f1ac17c72a201122bec06796}{all\+\_\+highway\+\_\+poly\+\_\+segments\+\_\+}
+\begin{DoxyCompactList}\small\item\em Segments for polygon creation. \end{DoxyCompactList}\item 
+\hypertarget{class_entity_container_a2d13b673d7e3dfd5d6e32bcb43f55e6c}{}\label{class_entity_container_a2d13b673d7e3dfd5d6e32bcb43f55e6c} 
+std\+::vector$<$ Segment\+\_\+2 $>$ {\bfseries all\+\_\+street\+\_\+poly\+\_\+segments\+\_\+}
+\item 
+std\+::vector$<$ Segment\+\_\+2 $>$ \hyperlink{class_entity_container_a3ef34e622b3fa04986935d20c503ae53}{street\+\_\+segment\+\_\+grid} \mbox{[}100\mbox{]}\mbox{[}100\mbox{]}
+\begin{DoxyCompactList}\small\item\em Grid used for neighbour detection. \end{DoxyCompactList}\item 
+\hypertarget{class_entity_container_a82488b4b59d1cfb8a94ca2579ada935c}{}\label{class_entity_container_a82488b4b59d1cfb8a94ca2579ada935c} 
+std\+::vector$<$ Point\+\_\+2 $>$ \hyperlink{class_entity_container_a82488b4b59d1cfb8a94ca2579ada935c}{intersection\+\_\+grid} \mbox{[}100\mbox{]}\mbox{[}100\mbox{]}
+\begin{DoxyCompactList}\small\item\em Grid used for intersection point. See street\+\_\+segment\+\_\+grid for further explanantion. \end{DoxyCompactList}\item 
+\hypertarget{class_entity_container_a66ebc4d45f6b543b4d1fca1fdd69de58}{}\label{class_entity_container_a66ebc4d45f6b543b4d1fca1fdd69de58} 
+std\+::vector$<$ Segment\+\_\+2 $>$ \hyperlink{class_entity_container_a66ebc4d45f6b543b4d1fca1fdd69de58}{river\+\_\+segment\+\_\+grid} \mbox{[}100\mbox{]}\mbox{[}100\mbox{]}
+\begin{DoxyCompactList}\small\item\em Grid used for river segments. See street\+\_\+segment\+\_\+grid for further explanantion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Singleton Container class used by all \hyperlink{class_non_terminal_symbol}{Non\+Terminal\+Symbol} classes. 
+
+Holds all segments, all intersection and other needed informations. Class is a singleton and is used allover the project as a {\bfseries shared} {\bfseries information} {\bfseries container} (if necessary).
+
+\begin{DoxyNote}{Note}
+Also holds functions for intersection checking 
+
+Some variables will be read from input file (capitalized variables)
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Lukas Gregori 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1.\+0 
+\end{DoxyParagraph}
+
+
+Contact\+: \href{mailto:lukas.gregori@student.tugraz.at}{\tt lukas.\+gregori@student.\+tugraz.\+at}
+
+Class implemented as singleton 
+
+ Copyright (C) Lukas Gregori, \href{mailto:contact@lukasgregori.com}{\tt contact@lukasgregori.\+com}
+
+This file is part of the road network generator Road\+Gen.
+
+Road\+Gen is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+Road\+Gen is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+
+You should have received a copy of the G\+NU General Public License \subsubsection*{along with Foobar. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}. }
+
+\subsection{Member Function Documentation}
+\hypertarget{class_entity_container_a9a7c554edd1f83a1be2616c0136e42c5}{}\label{class_entity_container_a9a7c554edd1f83a1be2616c0136e42c5} 
+\index{Entity\+Container@{Entity\+Container}!get\+Grid\+Cell@{get\+Grid\+Cell}}
+\index{get\+Grid\+Cell@{get\+Grid\+Cell}!Entity\+Container@{Entity\+Container}}
+\subsubsection{\texorpdfstring{get\+Grid\+Cell()}{getGridCell()}}
+{\footnotesize\ttfamily Point\+\_\+2 Entity\+Container\+::get\+Grid\+Cell (\begin{DoxyParamCaption}\item[{C\+G\+A\+L\+::\+M\+P\+\_\+\+Float}]{x,  }\item[{C\+G\+A\+L\+::\+M\+P\+\_\+\+Float}]{y }\end{DoxyParamCaption})}
+
+
+
+Gets grid cell depending on x and y coordinate. 
+
+Returns the indizes of the grid cell in which x and y belong. Cann be used as index to the points grid.
+
+
+\begin{DoxyParams}{Parameters}
+{\em C\+G\+A\+L\+::\+M\+P\+\_\+\+Float} & x x-\/coordinate \\
+\hline
+{\em C\+G\+A\+L\+::\+M\+P\+\_\+\+Float} & y y-\/coordinate\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Point\+\_\+2 The cell the coordinates are in 
+\end{DoxyReturn}
+\hypertarget{class_entity_container_a784de18b1f33fa8badc79fc369d29935}{}\label{class_entity_container_a784de18b1f33fa8badc79fc369d29935} 
+\index{Entity\+Container@{Entity\+Container}!get\+Nearest\+Intersection@{get\+Nearest\+Intersection}}
+\index{get\+Nearest\+Intersection@{get\+Nearest\+Intersection}!Entity\+Container@{Entity\+Container}}
+\subsubsection{\texorpdfstring{get\+Nearest\+Intersection()}{getNearestIntersection()}}
+{\footnotesize\ttfamily Point\+\_\+2 Entity\+Container\+::get\+Nearest\+Intersection (\begin{DoxyParamCaption}\item[{C\+G\+A\+L\+::\+M\+P\+\_\+\+Float}]{x,  }\item[{C\+G\+A\+L\+::\+M\+P\+\_\+\+Float}]{y }\end{DoxyParamCaption})}
+
+
+
+Gets the nearest intersection. 
+
+Calculates the nearest intersection point (if found), by using the grid system from the \hyperlink{class_entity_container}{Entity\+Container} class.
+
+If no intersection could be detected, the method returns P(0,0)
+
+
+\begin{DoxyParams}{Parameters}
+{\em C\+G\+A\+L\+::\+M\+P\+\_\+\+Float} & x Coordinate of P\+OI \\
+\hline
+{\em C\+G\+A\+L\+::\+M\+P\+\_\+\+Float} & y Coordinate of P\+OI \\
+\hline
+{\em int} & x\+\_\+off Grid Range X \\
+\hline
+{\em int} & y\+\_\+off Grid Range Y\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Point\+\_\+2 the next closest interception\+\_\+point, P(0,0) if no intersection was found 
+\end{DoxyReturn}
+\hypertarget{class_entity_container_a652c1d48db6052d1d8dd5e1aa5c5eb5f}{}\label{class_entity_container_a652c1d48db6052d1d8dd5e1aa5c5eb5f} 
+\index{Entity\+Container@{Entity\+Container}!river\+Intersected@{river\+Intersected}}
+\index{river\+Intersected@{river\+Intersected}!Entity\+Container@{Entity\+Container}}
+\subsubsection{\texorpdfstring{river\+Intersected()}{riverIntersected()}}
+{\footnotesize\ttfamily std\+::vector$<$ Point\+\_\+2 $>$ Entity\+Container\+::river\+Intersected (\begin{DoxyParamCaption}\item[{C\+G\+A\+L\+::\+M\+P\+\_\+\+Float}]{x,  }\item[{C\+G\+A\+L\+::\+M\+P\+\_\+\+Float}]{y,  }\item[{C\+G\+A\+L\+::\+M\+P\+\_\+\+Float}]{x\+\_\+new,  }\item[{C\+G\+A\+L\+::\+M\+P\+\_\+\+Float}]{y\+\_\+new,  }\item[{int}]{x\+\_\+off,  }\item[{int}]{y\+\_\+off }\end{DoxyParamCaption})}
+
+
+
+Checks if an existin river would be intersected by inserting the point specified by the paramters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em C\+G\+A\+L\+::\+M\+P\+\_\+\+Float} & x start X of new segment \\
+\hline
+{\em C\+G\+A\+L\+::\+M\+P\+\_\+\+Float} & y start Y of new segment \\
+\hline
+{\em C\+G\+A\+L\+::\+M\+P\+\_\+\+Float} & x\+\_\+new end X of new segment \\
+\hline
+{\em C\+G\+A\+L\+::\+M\+P\+\_\+\+Float} & y\+\_\+new end Y of new segment \\
+\hline
+{\em int} & x\+\_\+off, int y\+\_\+off Grid offset\\
+\hline
+\end{DoxyParams}
+Point\+\_\+2 the next closest interception\+\_\+point, P(0,0) if no intersection was found \hypertarget{class_entity_container_a1e1faca63c2c26689c6d49b42edb1792}{}\label{class_entity_container_a1e1faca63c2c26689c6d49b42edb1792} 
+\index{Entity\+Container@{Entity\+Container}!segment\+Intersected@{segment\+Intersected}}
+\index{segment\+Intersected@{segment\+Intersected}!Entity\+Container@{Entity\+Container}}
+\subsubsection{\texorpdfstring{segment\+Intersected()}{segmentIntersected()}}
+{\footnotesize\ttfamily Point\+\_\+2 Entity\+Container\+::segment\+Intersected (\begin{DoxyParamCaption}\item[{C\+G\+A\+L\+::\+M\+P\+\_\+\+Float}]{x,  }\item[{C\+G\+A\+L\+::\+M\+P\+\_\+\+Float}]{y,  }\item[{C\+G\+A\+L\+::\+M\+P\+\_\+\+Float}]{x\+\_\+new,  }\item[{C\+G\+A\+L\+::\+M\+P\+\_\+\+Float}]{y\+\_\+new,  }\item[{unsigned}]{old\+\_\+angle,  }\item[{int}]{x\+\_\+off,  }\item[{int}]{y\+\_\+off }\end{DoxyParamCaption})}
+
+
+
+Checks if segment intersects with another one. 
+
+Checks if the segment which starts at x/y and ends at x\+\_\+new/y\+\_\+new intersects with any other segment within a hard-\/coded range.
+
+If the segment intercepts with one other segments, the closest interception point is returned
+
+
+\begin{DoxyParams}{Parameters}
+{\em C\+G\+A\+L\+::\+M\+P\+\_\+\+Float} & x start X of new segment \\
+\hline
+{\em C\+G\+A\+L\+::\+M\+P\+\_\+\+Float} & y start Y of new segment \\
+\hline
+{\em C\+G\+A\+L\+::\+M\+P\+\_\+\+Float} & x\+\_\+new end X of new segment \\
+\hline
+{\em C\+G\+A\+L\+::\+M\+P\+\_\+\+Float} & y\+\_\+new end Y of new segment \\
+\hline
+{\em unsigned} & old\+\_\+angle angle (Intersection merging) \\
+\hline
+{\em int} & x\+\_\+off Grid Range X \\
+\hline
+{\em int} & y\+\_\+off Grid Range Y\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Point\+\_\+2 the next closest interception\+\_\+point, P(0,0) if no intersection was found 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_entity_container_ada172611f1ac17c72a201122bec06796}{}\label{class_entity_container_ada172611f1ac17c72a201122bec06796} 
+\index{Entity\+Container@{Entity\+Container}!all\+\_\+highway\+\_\+poly\+\_\+segments\+\_\+@{all\+\_\+highway\+\_\+poly\+\_\+segments\+\_\+}}
+\index{all\+\_\+highway\+\_\+poly\+\_\+segments\+\_\+@{all\+\_\+highway\+\_\+poly\+\_\+segments\+\_\+}!Entity\+Container@{Entity\+Container}}
+\subsubsection{\texorpdfstring{all\+\_\+highway\+\_\+poly\+\_\+segments\+\_\+}{all\_highway\_poly\_segments\_}}
+{\footnotesize\ttfamily std\+::vector$<$Segment\+\_\+2$>$ Entity\+Container\+::all\+\_\+highway\+\_\+poly\+\_\+segments\+\_\+}
+
+
+
+Segments for polygon creation. 
+
+Stores the segments needed for the polygon creation. We create a seperate vector which does not stop at intersections, but rather continues drawing a bit, so that the 2\+D-\/\+Arrangements can detect an intersection \hypertarget{class_entity_container_a5f33573ae189549588fe11c9207374f7}{}\label{class_entity_container_a5f33573ae189549588fe11c9207374f7} 
+\index{Entity\+Container@{Entity\+Container}!all\+\_\+polygons\+\_\+@{all\+\_\+polygons\+\_\+}}
+\index{all\+\_\+polygons\+\_\+@{all\+\_\+polygons\+\_\+}!Entity\+Container@{Entity\+Container}}
+\subsubsection{\texorpdfstring{all\+\_\+polygons\+\_\+}{all\_polygons\_}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$Point\+\_\+2$>$ $>$ Entity\+Container\+::all\+\_\+polygons\+\_\+}
+
+All polygons gotten from the J\+S\+O\+N-\/\+Generator using the line segments from the ...\+\_\+poly\+\_\+segments vectors below. \hypertarget{class_entity_container_a903b71e2c4be9c3e1d09f15e43535117}{}\label{class_entity_container_a903b71e2c4be9c3e1d09f15e43535117} 
+\index{Entity\+Container@{Entity\+Container}!D\+A\+Y\+\_\+\+M\+O\+DE@{D\+A\+Y\+\_\+\+M\+O\+DE}}
+\index{D\+A\+Y\+\_\+\+M\+O\+DE@{D\+A\+Y\+\_\+\+M\+O\+DE}!Entity\+Container@{Entity\+Container}}
+\subsubsection{\texorpdfstring{D\+A\+Y\+\_\+\+M\+O\+DE}{DAY\_MODE}}
+{\footnotesize\ttfamily int Entity\+Container\+::\+D\+A\+Y\+\_\+\+M\+O\+DE = true}
+
+Dependant on this variable an export flag is set for the city generator (G\+ML), which will then handle the textures for the windows differently (Will emitt light). \hypertarget{class_entity_container_a9e2ee21384cc1ed4a2a74a2dbb57afa2}{}\label{class_entity_container_a9e2ee21384cc1ed4a2a74a2dbb57afa2} 
+\index{Entity\+Container@{Entity\+Container}!H\+I\+G\+H\+W\+A\+Y\+\_\+\+C\+O\+U\+NT@{H\+I\+G\+H\+W\+A\+Y\+\_\+\+C\+O\+U\+NT}}
+\index{H\+I\+G\+H\+W\+A\+Y\+\_\+\+C\+O\+U\+NT@{H\+I\+G\+H\+W\+A\+Y\+\_\+\+C\+O\+U\+NT}!Entity\+Container@{Entity\+Container}}
+\subsubsection{\texorpdfstring{H\+I\+G\+H\+W\+A\+Y\+\_\+\+C\+O\+U\+NT}{HIGHWAY\_COUNT}}
+{\footnotesize\ttfamily int Entity\+Container\+::\+H\+I\+G\+H\+W\+A\+Y\+\_\+\+C\+O\+U\+NT}
+
+Number of highways total. Used for street-\/start creation. Streets may only propagate (\char`\"{}grow\char`\"{}) once all highways were closed. \hypertarget{class_entity_container_a3ef34e622b3fa04986935d20c503ae53}{}\label{class_entity_container_a3ef34e622b3fa04986935d20c503ae53} 
+\index{Entity\+Container@{Entity\+Container}!street\+\_\+segment\+\_\+grid@{street\+\_\+segment\+\_\+grid}}
+\index{street\+\_\+segment\+\_\+grid@{street\+\_\+segment\+\_\+grid}!Entity\+Container@{Entity\+Container}}
+\subsubsection{\texorpdfstring{street\+\_\+segment\+\_\+grid}{street\_segment\_grid}}
+{\footnotesize\ttfamily std\+::vector$<$Segment\+\_\+2$>$ Entity\+Container\+::street\+\_\+segment\+\_\+grid\mbox{[}100\mbox{]}\mbox{[}100\mbox{]}}
+
+
+
+Grid used for neighbour detection. 
+
+If we need the neighbours of one point, we check the corresponding square. We can thus compute the neighbours by a simple lookup operation {\ttfamily }(O(1)) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/lukas/\+Desktop/\+Road\+Gen\+L\+Systems/Entity\+Container.\+h\item 
+C\+:/\+Users/lukas/\+Desktop/\+Road\+Gen\+L\+Systems/Entity\+Container.\+cpp\end{DoxyCompactItemize}

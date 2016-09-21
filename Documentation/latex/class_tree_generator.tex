@@ -1,0 +1,98 @@
+\hypertarget{class_tree_generator}{}\section{Tree\+Generator Class Reference}
+\label{class_tree_generator}\index{Tree\+Generator@{Tree\+Generator}}
+
+
+Generates the trees (Placement in park)  
+
+
+
+
+{\ttfamily \#include $<$Tree\+Generator.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ Point\+\_\+2 $>$ \hyperlink{class_tree_generator_af5688087b3d43a0abd62716e8ae8fa18}{generate\+Trees} (vector$<$ Point\+\_\+2 $>$ park)
+\begin{DoxyCompactList}\small\item\em Generate the trees inside the park specified by the parameter. \end{DoxyCompactList}\item 
+static bool \hyperlink{class_tree_generator_a580ff42e61ae496662683d61383916b6}{tree\+Nearby} (Point\+\_\+2 tree, vector$<$ Point\+\_\+2 $>$ all\+\_\+trees)
+\begin{DoxyCompactList}\small\item\em Checks if a tree is nearby another one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Generates the trees (Placement in park) 
+
+Used for placing trees based on a given park. The trees can be palced using different methods (e.\+g. random placement).
+
+The parks are trinagulated and within the triangles a random point is chosen as position for the trees.
+
+\begin{DoxyNote}{Note}
+Currently trees are placed randomly inside the parks only
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Lukas Gregori 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Revision}
+1.\+0 
+\end{DoxyParagraph}
+
+
+Contact\+: \href{mailto:lukas.gregori@student.tugraz.at}{\tt lukas.\+gregori@student.\+tugraz.\+at}
+
+Class implemented as singleton
+
+
+
+ Copyright (C) Lukas Gregori, \href{mailto:contact@lukasgregori.com}{\tt contact@lukasgregori.\+com}
+
+This file is part of the road network generator Road\+Gen.
+
+Road\+Gen is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+Road\+Gen is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+
+You should have received a copy of the G\+NU General Public License \subsubsection*{along with Foobar. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}. }
+
+\subsection{Member Function Documentation}
+\hypertarget{class_tree_generator_af5688087b3d43a0abd62716e8ae8fa18}{}\label{class_tree_generator_af5688087b3d43a0abd62716e8ae8fa18} 
+\index{Tree\+Generator@{Tree\+Generator}!generate\+Trees@{generate\+Trees}}
+\index{generate\+Trees@{generate\+Trees}!Tree\+Generator@{Tree\+Generator}}
+\subsubsection{\texorpdfstring{generate\+Trees()}{generateTrees()}}
+{\footnotesize\ttfamily std\+::vector$<$ Point\+\_\+2 $>$ Tree\+Generator\+::generate\+Trees (\begin{DoxyParamCaption}\item[{vector$<$ Point\+\_\+2 $>$}]{park }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Generate the trees inside the park specified by the parameter. 
+
+Method returns a vector of points, containind the positions for the trees inside a park (Specified by the given parameters).
+
+std\+::vector$<$\+Point\+\_\+2$>$ park, Coordinates of the parks vertices
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Point\+\_\+2$>$ positions of the trees inside the park 
+\end{DoxyReturn}
+\hypertarget{class_tree_generator_a580ff42e61ae496662683d61383916b6}{}\label{class_tree_generator_a580ff42e61ae496662683d61383916b6} 
+\index{Tree\+Generator@{Tree\+Generator}!tree\+Nearby@{tree\+Nearby}}
+\index{tree\+Nearby@{tree\+Nearby}!Tree\+Generator@{Tree\+Generator}}
+\subsubsection{\texorpdfstring{tree\+Nearby()}{treeNearby()}}
+{\footnotesize\ttfamily bool Tree\+Generator\+::tree\+Nearby (\begin{DoxyParamCaption}\item[{Point\+\_\+2}]{tree,  }\item[{vector$<$ Point\+\_\+2 $>$}]{all\+\_\+trees }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Checks if a tree is nearby another one. 
+
+Method is used to determine if a tree is nearby. If so, we do not wan\textquotesingle{}t to create a new tree directly next to it.
+
+Point\+\_\+2 tree new tree  vector$<$\+Point\+\_\+2$>$ all\+\_\+trees all trees already created
+
+\begin{DoxyReturn}{Returns}
+bool true if not trees within M\+I\+N\+\_\+\+T\+R\+E\+E\+\_\+\+D\+I\+S\+T\+A\+N\+CE range, false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/lukas/\+Desktop/\+Road\+Gen\+L\+Systems/Tree\+Generator.\+h\item 
+C\+:/\+Users/lukas/\+Desktop/\+Road\+Gen\+L\+Systems/Tree\+Generator.\+cpp\end{DoxyCompactItemize}
